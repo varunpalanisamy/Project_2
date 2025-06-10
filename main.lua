@@ -1,11 +1,19 @@
 local Game = require("game")
 
 function love.load()
+    -- love.window.setMode(1024, 768)
+    -- love.math.setRandomSeed(os.time())
+    -- love.math.random() 
+    -- love.math.random()
+    -- love.math.random()
+
+
     love.window.setMode(1024, 768)
-    love.math.setRandomSeed(os.time())
-    love.math.random() 
-    love.math.random()
-    love.math.random()
+
+
+    math.randomseed(os.time())
+
+    math.random(); math.random(); math.random()
 
     Game:load()
 end
